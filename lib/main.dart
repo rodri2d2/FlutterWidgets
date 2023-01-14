@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/views/listView_1.dart';
+
+
+import 'views/views.dart';
+
 
 void main() => runApp(const MyApp());
 
@@ -10,9 +13,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Flutter Widgets',
-      home: ListView1(),
+      initialRoute: 'homeView',
+      routes: {
+        'homeView': (context) =>  HomeView(),
+        'listView_1': (context) => const ListView1(),
+        'listView_2': (context) => const ListView2(),
+        'alertView': (context) => const AlertView(),
+      },
     );
   }
 }
