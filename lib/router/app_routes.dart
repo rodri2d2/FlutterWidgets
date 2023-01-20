@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/views/cardView.dart';
 import '../views/views.dart';
 import 'package:flutter_widgets/models/models.dart';
 
@@ -24,6 +25,12 @@ class AppRoutes {
       view: ListView1(),
       icon: Icons.list,
     ),
+    MenuOption(
+      route: 'cardView',
+      name: 'Card View',
+      view: CardView(),
+      icon: Icons.card_membership,
+    ),
   ];
 
   static const initialRoute = 'home';
@@ -44,6 +51,6 @@ class AppRoutes {
   // };
 
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
-    return MaterialPageRoute(builder: (context) =>  ListView1());
+    return MaterialPageRoute(builder: (context) => ListView1());
   }
 }

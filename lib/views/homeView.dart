@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/resourses/app_theme.dart';
 import 'package:flutter_widgets/router/app_routes.dart';
 
 class HomeView extends StatelessWidget {
@@ -15,7 +16,10 @@ class HomeView extends StatelessWidget {
       ),
       body: ListView.separated(
         itemBuilder: (context, index) => ListTile(
-          leading: Icon(menuOptions[index].icon),
+          leading: Icon(
+            menuOptions[index].icon,
+            color: AppTheme.primary,
+          ),
           title: Text(menuOptions[index].name),
           onTap: () {
             print(menuOptions[index].name);
