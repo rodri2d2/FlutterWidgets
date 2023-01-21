@@ -8,12 +8,6 @@ typedef WidgetRoutes = Widget Function(BuildContext);
 class AppRoutes {
   static final menuOptions = <MenuOption>[
     MenuOption(
-      route: 'home',
-      name: 'Home  View',
-      view: HomeView(),
-      icon: Icons.home,
-    ),
-    MenuOption(
       route: 'alertView',
       name: 'Alert View',
       view: const AlertView(),
@@ -37,12 +31,19 @@ class AppRoutes {
       view: AvatarView(),
       icon: Icons.person,
     ),
+    MenuOption(
+      route: 'animatedView',
+      name: 'Animated View',
+      view: AnimatedView(),
+      icon: Icons.animation,
+    )
   ];
 
   static const initialRoute = 'home';
 
   static Map<String, WidgetRoutes> getAppRoutes() {
     Map<String, WidgetRoutes> appRoutes = {};
+    appRoutes.addAll({'home': (BuildContext context) => HomeView()});
     for (final option in menuOptions) {
       appRoutes.addAll({option.route: (BuildContext context) => option.view});
     }
