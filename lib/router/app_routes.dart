@@ -31,6 +31,12 @@ class AppRoutes {
       view: CardView(),
       icon: Icons.card_membership,
     ),
+    MenuOption(
+      route: 'avatarView',
+      name: 'Avatar View',
+      view: AvatarView(),
+      icon: Icons.person,
+    ),
   ];
 
   static const initialRoute = 'home';
