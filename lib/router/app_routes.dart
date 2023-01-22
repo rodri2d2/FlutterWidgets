@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/views/cardView.dart';
 import '../views/views.dart';
 import 'package:flutter_widgets/models/models.dart';
 
@@ -36,6 +35,12 @@ class AppRoutes {
       name: 'Animated View',
       view: AnimatedView(),
       icon: Icons.animation,
+    ),
+    MenuOption(
+      route: 'inputsView',
+      name: 'Inputs View',
+      view: InputsView(),
+      icon: Icons.input_outlined,
     )
   ];
 
