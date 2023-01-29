@@ -6,3 +6,4 @@ export 'package:flutter_widgets/views/avatarView.dart';
 export 'package:flutter_widgets/views/animatedView.dart';
 export 'package:flutter_widgets/views/inputsView.dart';
 export 'package:flutter_widgets/views/cardView.dart';
+export 'package:flutter_widgets/views/sliderView.dart';

@@ -41,6 +41,12 @@ class AppRoutes {
       name: 'Inputs View',
       view: InputsView(),
       icon: Icons.input_outlined,
+    ),
+    MenuOption(
+      route: 'sliderView',
+      name: 'Slider View',
+      view: SliderView(),
+      icon: Icons.slideshow_outlined,
     )
   ];
 
