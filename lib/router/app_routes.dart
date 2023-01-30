@@ -47,6 +47,12 @@ class AppRoutes {
       name: 'Slider View',
       view: SliderView(),
       icon: Icons.slideshow_outlined,
+    ),
+    MenuOption(
+      route: 'listViewBuilderView',
+      name: 'List view builder view',
+      view: ListViewBuilderView(),
+      icon: Icons.line_style_outlined,
     )
   ];
 
